@@ -5,7 +5,7 @@ import os,time  #Let's import the OS and time library
 def randomNumber(suprema):
   #The number we gonna return is gonna divide the processus ID by the time of the processor clock of the computer, modulo the number
   #given by the user.
-  number = os.getpid()*time.time_ns()%suprema 
+  number = os.getpid()*time.time_ns()%(suprema/3) 
   return int(number)
 
 

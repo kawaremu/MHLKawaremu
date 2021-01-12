@@ -4,7 +4,9 @@ def bubbleSort(array):
 			if(array[j] > array[j+1]):
 				array[j], array[j+1] = array[j+1], array[j] 
 
-
-y = [5,4,3,2,1]
-bubbleSort(y)
-print(y)
+number_list = [5,4,3,2,1]
+alphabet_list = ['k','z','w','a','b']
+bubbleSort(number_list)
+bubbleSort(alphabet_list)
+print(number_list)
+print(alphabet_list)
